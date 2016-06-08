@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-3.3.6.min.css"/>
+        <link rel="stylesheet" href="css/imgareaselect-default.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="libs/jquery-2.2.4.min.js"></script>
+        <script src="libs/jquery.imgareaselect.min.js"></script>
+        <script src="libs/bootstrap-3.3.5-custom.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default crop-container">
+                <div class="panel-body">
+                    <div class="crop-controls col-md-12" >
+                        <h2>Upload Avatar</h2>
+                            <div class="form-group col-md-4">
+                                <label for="fromPcInput">From computer</label>
+                                <input type="file" class="form-control"  id="fromPcInput" data-crop-html-input accept="image">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="fromInternetInput">From the Internet</label>
+                                <input type="text" class="form-control" id="fromInternetInput" data-crop-url-input placeholder="http://">
+                                <span class="small">Minimal size: 186px*186px, Maximum file size: 5mb</span>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <button type="submit" class="btn btn-default" data-crop-submit disabled="disabled" >Upload</button>
+                            </div>
+                    </div>
+                    <div class="crop-canvas col-md-12">
+                        <div class="avatar-fullimage col-md-9">
+                            <img id="img-fullavatar">
+                        </div>
+
+                        <div class="avatar-croppedimage col-md-2">
+                            <img id="img-avatar">
+                        </div>
+                    </div>
+                    <div class="crop-submit col-md-12">
+                        <div class="btn-group col-md-6">
+                            <button class="btn btn-lg btn-success collapse pull-right" type="submit" data-crop-submit-avatar >Save</button>
+                        </div>
+                        <div class="selected-coords invisible">
+                            <input type="hidden" name="x1" value="" />
+                            <input type="hidden" name="y1" value="" />
+                            <input type="hidden" name="x2" value="" />
+                            <input type="hidden" name="y2" value="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </body>
+</html>
