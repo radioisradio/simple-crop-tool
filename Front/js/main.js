@@ -67,7 +67,7 @@ $(() => {
                 let result;
                 result = (img.height < 186 && img.width < 186);
                 $(el).find(".crop-controls button[data-crop-submit]").prop("disabled", result);
-            }
+            };
             img.src = link;
         };
 
